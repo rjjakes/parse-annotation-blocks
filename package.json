@@ -1,0 +1,26 @@
+{
+  "name": "parse-annotation-blocks",
+  "version": "1.0.0",
+  "description": "ES6 string splitting by annotated comments. Parse blocks of text wrapped in annotated comments to JS object. ",
+  "main": "./distribution/index.js",
+  "scripts": {
+    "test": "yarn run distribution/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjjakes/parse-annotation-blocks.git"
+  },
+  "keywords": [
+    "comments",
+    "css",
+    "annotations",
+    "strings",
+    "es6"
+  ],
+  "author": "https://github.com/rjjakes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjjakes/parse-annotation-blocks/issues"
+  },
+  "homepage": "https://github.com/rjjakes/parse-annotation-blocks#readme"
+}
