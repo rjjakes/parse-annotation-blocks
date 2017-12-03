@@ -1,10 +1,12 @@
 {
   "name": "parse-annotation-blocks",
   "version": "1.0.0",
-  "description": "ES6 string splitting by annotated comments. Parse blocks of text wrapped in annotated comments to JS object. ",
+  "description": "ES6 string splitting by annotated comments. Parse blocks of text wrapped in annotated comments to JS object.",
   "main": "./distribution/index.js",
   "scripts": {
-    "test": "yarn run distribution/test.js"
+    "build": "babel source --presets babel-preset-es2015 --out-dir distribution",
+    "test": "node ./distribution/test.js",
+    "prepare": "yarn run build"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/rjjakes/parse-annotation-blocks/issues"
   },
-  "homepage": "https://github.com/rjjakes/parse-annotation-blocks#readme"
+  "homepage": "https://github.com/rjjakes/parse-annotation-blocks#readme",
+  "devDependencies": {
+    "babel-cli": "6",
+    "babel-preset-es2015": "6"
+  }
 }
