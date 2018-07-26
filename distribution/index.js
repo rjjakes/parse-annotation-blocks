@@ -3,14 +3,13 @@
 /**
  * Takes a string that is annotated with @start and @end and split into a keyed object of strings.
  *
- * @param css {String}
+ * @param string {String}
  * @returns {Object}
  */
-
 module.exports = function parseAnnotations(string) {
 
   // Run the regex to split string
-  var regex = /([/][*][\s\S]*?@start)(\s\S*?)([\s\S]*?)([*][/])([\s\S]*?)([/][*][\s\S]*?@end.*?[\s\S]*?[*][/])/gm;
+  var regex = /([\/][*][\s\S]*?@start)([\s\S]?)(\s\S*?)([\s\S]?[*][\/])([\s\S]*?)(.*?)([\/][*][\s\S]?@end[\s\S]*?[*][\/])/gm;
 
   // Process the results into a js object.
   var returnObj = {};

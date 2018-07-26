@@ -7,7 +7,7 @@
 module.exports = function parseAnnotations (string) {
 
   // Run the regex to split string
-  const regex = /([/][*][\s\S]*?@start)(\s\S*?)([\s\S]*?)([*][/])([\s\S]*?)([/][*][\s\S]*?@end.*?[\s\S]*?[*][/])/gm
+  const regex = /([\/][*][\s\S]*?@start)([\s\S]?)(\s\S*?)([\s\S]?[*][\/])([\s\S]*?)(.*?)([\/][*][\s\S]?@end[\s\S]*?[*][\/])/gm
 
   // Process the results into a js object.
   let returnObj = {}
