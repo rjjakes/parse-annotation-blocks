@@ -1,6 +1,6 @@
 {
   "name": "parse-annotation-blocks",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ES6 string splitting by annotated comments. Parse blocks of text wrapped in annotated comments to JS object.",
   "main": "./distribution/index.js",
   "scripts": {
